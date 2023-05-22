@@ -1,0 +1,135 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Oct, 2019, 11:17:33 AM
+    Author     : rudhra
+*/
+@import 'basestyle';
+body{
+    @extend .base;
+    font-family: 'ExpletusSans-Regular';
+    color: #000;
+    font-size: 16px;
+    height: 100vh;
+    min-width:320px;
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+label.form-label{
+    @extend .base;
+    width: 100%;    
+    font-size: 1.5em;
+    color: #ac6607;
+    font-weight: 400;
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+        font-size: 1em;
+    }
+    @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+        font-size: 1em;
+    }
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    // background: url('../images/selectarrow.png') no-repeat scroll 98% 50%;
+    background-size: .999rem;
+}
+
+input[type="text"],input[type="password"], select{
+    @extend .base;
+    /*border-color: #ac6607;*/
+    border: 1.5px solid #ac6607;
+    border-radius: 0.3125em;
+    color: #838181;
+    font-size: 1.4em;
+    font-weight: 400;
+    width: 100%;
+    padding: 10px 0 10px 25px;
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        padding: 5px 0 5px 10px;
+        font-size: 1em;
+    }
+    @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+        padding: 5px 0 5px 10px;
+        font-size: 1em;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.frm-inp-sec{
+    @extend .base;
+    width: 100%;
+    display: table;
+    .form-inp-error{
+        @extend .base;
+        color: red;
+        font-size: 15px;
+        width: 100%;
+        padding: .2em 0 0 0;
+        display: table;
+
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        padding-bottom:1em;
+    }
+
+}
+.button-sec{
+    @extend .base;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding-top: 32px;   
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        padding-top: 15px;   
+    }
+
+}
+
+button{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+button.form-btn{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    /*border: 0;*/
+    border: 1px solid #ac6607;
+    color: #fff;
+    background: #ac6607;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 10px 16px 10px 16px;
+    &:hover{
+        color: #ac6607;
+        background: #fff;
+        border: 1px solid #ac6607;
+        cursor: pointer;
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+        font-size: 1em;
+    }
+    @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+        font-size: 1em;
+    }
+}
+a:hover{
+    text-decoration: none;
+}
+/* ADMIN HEADER STARTS */
+
+/* ADMIN HEADER ENDS */

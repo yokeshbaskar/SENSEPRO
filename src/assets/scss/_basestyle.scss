@@ -1,0 +1,218 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Oct, 2019, 11:17:01 AM
+    Author     : rudhra
+*/
+@font-face {
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'ExpletusSans-Regular';
+    src: url("../fonts/ExpletusSans/ExpletusSans-Regular.eot");
+    /* IE6-IE9 */
+    src: local("SEGOEUI"), url("../fonts/ExpletusSans/ExpletusSans-Regular.ttf") format("truetype");
+    /* Modern Browsers */
+}
+.base{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: none;
+}
+
+
+/* border */
+$br_color: #d7d7d7;
+
+
+
+.br{
+    border: 1px solid $br_color;
+}
+.br_top{
+    border-top: 1px solid $br_color;
+}
+.br_btm{
+    border-bottom: 1px solid $br_color;
+}
+.br_lft{
+    border-left: 1px solid $br_color;
+}
+.br_rt{
+    border-right: 1px solid $br_color;
+}
+.br_none{
+    border: none !important;
+}
+
+.br_lft_none{
+    border-left: none !important;
+}
+.br_rt_none{
+    border-right: none !important;
+}
+.br_top_none{
+    border-top: none !important;
+}
+.br_btm_none{
+    border-bottom: none !important;
+}
+/* text align*/
+.txt_alin_rt{
+    text-align: right !important;
+}
+.txt_alin_lft{
+    text-align: left !important;
+}
+.txt_alin_cnt{
+    text-align: center !important;
+}
+.txt_alin_just{
+    text-align: justify !important;
+}
+
+@mixin border($size, $type, $color, $direction, $state){
+    @if $direction == "right"{
+        @if $state ==0{
+            border-right: $size $type $color;
+        }@else{
+            border-right: $size $type $color $state;
+        }
+
+    }@else if $direction == "left"{
+        @if $state ==0{
+            border-left: $size $type $color;
+        }@else{
+            border-left: $size $type $color $state;
+        }
+
+    }@else if $direction == "top"{
+        @if $state == 0{
+            border-top: $size $type $color;
+        }@else{
+            border-top: $size $type $color $state;
+        }
+
+    }@else if $direction == "bottom"{
+        @if $state == 0{
+            border-bottom: $size $type $color;
+        }@else{
+            border-bottom: $size $type $color $state;
+        }
+
+    }
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin box-shadow($x,$y,$blur,$color){
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    -ms-box-shadow: $x $y $blur $color;
+    -o-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+$pads: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75; 
+/* padding */
+@each $pad in $pads{
+    .pad_top#{$pad} {
+        padding-top: #{$pad}px !important; 
+    }
+}
+@each $pad in $pads{
+    .pad_btm#{$pad} {
+        padding-bottom: #{$pad}px !important;  
+    }
+}
+@each $pad in $pads{
+    .pad_lft#{$pad} {
+        padding-left: #{$pad}px !important; 
+    }
+}
+@each $pad in $pads{
+    .pad_rt#{$pad} {
+        padding-right: #{$pad}px !important; 
+    }
+}
+
+.no_pad{
+    padding: 0 !important;
+}
+.no_pad_top{
+    padding-top: 0 !important;
+}
+.no_pad_btm{
+    padding-bottom: 0 !important;
+}
+.no_pad_rt{
+    padding-right: 0 !important;
+}
+.no_pad_lft{
+    padding-left: 0 !important;
+}
+
+/* margin */
+@each $pad in $pads{
+    .mrg_top#{$pad} {
+        margin-top: #{$pad}px !important; 
+    }
+}
+@each $pad in $pads{
+    .mrg_btm#{$pad} {
+        margin-bottom: #{$pad}px !important;  
+    }
+}
+@each $pad in $pads{
+    .mrg_lft#{$pad} {
+        margin-left: #{$pad}px !important; 
+    }
+}
+@each $pad in $pads{
+    .mrg_rt#{$pad} {
+        margin-right: #{$pad}px !important; 
+    }
+}
+.no_mrg{
+    margin: 0 !important;
+}
+.no_mrg_top{
+    margin-top: 0 !important;
+}
+.no_mrg_btm{
+    margin-bottom: 0 !important;
+}
+.no_mrg_rt{
+    margin-right: 0 !important;
+}
+.no_mrg_lft{
+    margin-left: 0 !important;
+}
+
+/* alpha */
+@mixin Opacity($value){
+    $IEValue: $value*100;
+    opacity: $value;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+    filter: alpha(opacity=$IEValue);
+}
+
+$screen-xs-min: 320px;
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+$screen-lg-min: 1200px;
+$screen-lg-max: 1500px;

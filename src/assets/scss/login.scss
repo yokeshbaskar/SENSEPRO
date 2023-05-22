@@ -1,0 +1,143 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Oct, 2019, 10:58:52 AM
+    Author     : rudhra
+*/
+@import 'basestyle';
+.login{
+    width:100%;
+    height:100%;
+    @extend .base;
+    width: 100%;
+    display: table;
+    .login-form-sec{
+        @extend .base;
+        width: 100%;
+        padding: 4em 4em 0 4em;
+        .logo-sec{
+            @extend .base;
+            margin: 0 auto;
+            /*width: auto;*/
+            display: table;
+            padding:0em 0 0 4em;
+            max-width: 400px;
+            width:100%;
+            @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+                padding:0em;
+            }
+            @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+                padding:0em;
+                max-width: 350px;
+                width:100%;
+            }
+
+        }
+        .login-form-inner-sec{
+            @extend .base;
+            width: 100%;
+            padding:6.0625em 0 0 0;
+            @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+                padding:5em 0 0 0;
+            }
+            @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+                padding:3em 0 0 0;
+            }
+            .form-head{
+                @extend .base;
+                width: 100%;
+                display: table;
+                padding-bottom: 2.5em;
+                @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+                    padding-bottom: 1em;
+                }
+                @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+                    padding-bottom: .8em;
+                }
+
+                .main-head{
+                    @extend .base;
+                    margin: 0;
+                    color: #0c0c0c;
+                    font-size: 3.75em;
+                    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+                        font-size: 1.4em;    
+                    }
+                    @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+                        font-size: 1.5em;    
+                    }
+                }
+                .sub-head{
+                    @extend .base;
+                    margin: 0;
+                    color: #7b7878;
+                    font-size: 1.5em;
+                    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+                        font-size: 1em;    
+                    }
+                    @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+                        font-size: 1em;    
+                    }
+                }
+            }
+            .loin-form-sec{
+                @extend .base;
+                width: 100%;
+                .login-inp-sec{
+                    @extend .base;
+                    display: table;
+                    width: 94%;
+                    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+                        width: 100%;
+                    }
+
+                }
+                .login-inp-sec.lft{
+                    @extend .base;
+                    float: left;
+                }
+                .login-inp-sec.rgt{
+                    @extend .base;
+                    float: right;
+                }
+            }
+            .forgot-text{
+                @extend .base;
+                font-size: 1.1em;
+                color: #ac6607;
+                font-weight: 400;
+                width: auto;
+                margin: 0;
+                padding-top: 10px;
+                a{
+                    font-size: 1.5em;
+                    color: #ac6607;
+                    font-weight: 400;
+                    width: auto;
+                    margin: 0;
+                    padding-top: 50px;
+                }
+                @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+                    padding-top: 20px;
+                    font-size: .7em;
+                }
+                @media (min-width: $screen-sm-max) and (max-width: $screen-lg-max) {
+                    padding: 0;
+                    font-size: .9em;
+                }
+            }
+
+        }
+        @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+            padding:1em 1em 0 1em;
+        }
+    }
+    .slider-sec{
+        @extend .base;
+        width: 100%;
+        
+    }
+}

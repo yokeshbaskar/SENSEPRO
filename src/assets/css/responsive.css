@@ -1,0 +1,183 @@
+/* CSS Document */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.login-logo {max-width: 100%;margin: 0 auto;}
+.login-logo img {width: 100%;}
+
+header {height: initial;}
+.welcome {line-height: 40px; text-align:left;}
+.logout {line-height: 56px;position: absolute;top: -47px;right: 0;}
+
+  .fotter  ul {width: 100%;}
+  .fotter ul li a {padding: 13px 5px; font-size: 10px;}
+  
+  .inner-bt-box {margin-bottom: 15px;}
+  
+  .shadow-container1 form .form-group label {width: 100%;}
+  .shadow-container1 form .form-group .form-control {width: 100%;}
+	
+}
+
+@media only screen and (min-width: 481px) and (max-width: 677px) {
+.login-logo {max-width: 100%;margin: 0 auto;}
+.logo-box img {width: 100%;}
+
+header {height: initial;}
+.welcome {line-height: 40px; text-align:left;}
+.logout {line-height: 56px;position: absolute;top: -47px;right: 0;}	
+
+  .fotter  ul {width: 100%;}
+  .fotter ul li a { padding: 4px 7px; font-size:12px;}
+  
+  .inner-bt-box {margin-bottom: 15px;}
+  
+    .shadow-container1 form .form-group label {width: 100%;}
+  .shadow-container1 form .form-group .form-control {width: 100%;}
+	
+}
+
+@media only screen and (min-width: 678px) and (max-width: 767px) {
+
+	.logo-box img {width: 100%;}
+	
+header {height: initial;}
+.welcome {line-height: 40px; text-align:left;}
+.logout {line-height: 56px;position: absolute;top: -47px;right: 0;}
+
+  .fotter  ul {width: 100%;}
+  .fotter ul li a { padding: 4px 11px;}
+  
+  .inner-bt-box {margin-bottom: 15px;}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.logo-box img {width: 100%;}
+
+header {height: initial;}
+.welcome {line-height: 56px;}
+.logout {line-height: 56px;}
+
+  .navbar-nav > li {margin-left: 4px;margin-right: 4px;}
+  .fotter  ul {width: 85%;}
+  .fotter ul li a { padding: 4px 18px;}
+  
+  .shadow-container1 form .form-group .form-control {
+    width: 52%;
+}
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+header {height: initial;}
+.welcome {line-height: 56px;}
+.logout {line-height: 56px;}
+
+  .navbar-nav > li {margin-left: 14px;margin-right: 14px;}
+  
+  .fotter ul li a { padding: 4px 22px;}
+  
+	
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+header {height: initial;}
+.welcome {line-height: 56px;}
+.logout {line-height: 56px;}
+
+.fotter ul li a { padding: 4px 22px;}
+
+.shadow-container1 form .form-group .form-control {
+    width: 52%;
+}
+
+}
+
+
+/* MAIN NAV */
+
+/* lg */ 
+@media (min-width: 1200px) {
+ /* Make Navigation Toggle on Desktop Hover */
+  .dropdown:hover .dropdown-menu {display: block;-webkit-animation: fadeInUp 400ms;animation: fadeInUp 400ms;}
+ }
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+ /* Make Navigation Toggle on Desktop Hover */
+  .dropdown:hover .dropdown-menu {display: block;-webkit-animation: fadeInUp 400ms;animation: fadeInUp 400ms;}
+
+  .navbar-nav > li {
+    margin-left: 10px;
+  }
+
+  .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Make Navigation Toggle on Desktop Hover */
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      -webkit-animation: fadeInUp 400ms;
+      animation: fadeInUp 400ms;
+  }
+
+  .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+/*  .navbar-nav > li {
+    margin-left: 14px;
+    margin-right: 14px;
+  }*/
+  
+  .navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+ 
+}
+
+/* xs */
+@media (max-width: 767px) {
+  .container-fluid > .navbar-header, .container-fluid > .navbar-collapse{
+    margin-left: 0;
+  }
+  
+    .navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+  .navbar-nav > li {
+    padding-bottom: 0;
+  }
+  .navbar-inverse .navbar-nav > li > a {width: 100%;}
+
+
+  .tab-wrap .media .media-body{
+    clear: both;
+  }
+
+  .nav-tabs > li.active > a:after{
+    display: none;
+  }
+}
+
+/* XS Portrait */
+@media (max-width: 480px) {
+	  .navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+}
+	
+}
